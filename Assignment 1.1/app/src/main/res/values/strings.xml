@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Higher Lower</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Nope..</string>
+    <string name="instruction">Guess if the next throw is going to be lower, equal or higher</string>
+    <string name="lastThrow">Last throw: %d</string>
+    <string name="lower">Lower</string>
+    <string name="equal">Equal</string>
+    <string name="higher">Higher</string>
+</resources>
