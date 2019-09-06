@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Logic App</string>
+    <string name="description">Conjunction (AND)</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Not quite..</string>
+    <string name="header1">A</string>
+    <string name="header2">B</string>
+    <string name="header3">A ^ B</string>
+    <string name="submitBtnLabel">Submit</string>
+    <string name="T">T</string>
+    <string name="F">F</string>
+</resources>
