@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun checkAnswers() {
-        // First answer should be 'T', others should be 'F'
         if (answerFields[0].text.toString() == getText(R.string.T) && answerFields.subList(1, answerFields.size).find { it.text.toString() != getText(R.string.F) } == null) {
             guessedCorrectly()
         } else {
