@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment 2.2(SwipeQuiz)</string>
+    <string name="correct">Correct! The answer was: %b</string>
+    <string name="incorrect">Not quite... The answer was: %b</string>
+    <string name="instruction">Quiz instructions</string>
+    <string name="explanation">Swipe left if you think a question is true, right if you think it\'s false. Click on the questions for the answer</string>
+    <string name="clickMessage">The answer to \'%s\' is \'%b\'</string>
+</resources>
