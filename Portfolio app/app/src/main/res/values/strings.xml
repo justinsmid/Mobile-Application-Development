@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Museum app</string>
+    <string name="collection">Collection</string>
+    <string name="profile">Profile</string>
+    <string name="share">Share</string>
+    <string name="learnMore">Learn more</string>
+    <string name="comments">Comments</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email address</string>
+    <string name="submit">Submit</string>
+    <string name="register">Register an account</string>
+    <string name="viewComments">View comments</string>
+    <string name="viewFavorites">View favorites</string>
+    <string name="edit">Edit</string>
+    <string name="writeComment">Write a comment...</string>
+    <string name="filter">Filter...</string>
+</resources>
