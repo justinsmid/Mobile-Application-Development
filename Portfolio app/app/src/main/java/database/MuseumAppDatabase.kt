@@ -55,12 +55,24 @@ abstract class MuseumAppDatabase : RoomDatabase() {
                                     databaseInstance?.let { database ->
                                         CoroutineScope(Dispatchers.IO).launch {
                                             database.artworkDao().insertArtworks(listOf(
-                                                Artwork(title = "The Milkmaid", creator = "Johannes Vermeer", imageData = toByteArray(context.getDrawable(
-                                                    R.drawable.arrow_right_black)!!)),
-                                                Artwork(title = "The Starry Night", creator = "Van Gogh", imageData = toByteArray(context.getDrawable(
-                                                    R.drawable.ic_launcher_background)!!)),
-                                                Artwork(title = "The Night Watch", creator = "Rembrandt van Rijn", imageData = toByteArray(context.getDrawable(
-                                                    R.drawable.ic_launcher_foreground)!!))
+                                                Artwork(
+                                                    title = "The Milkmaid",
+                                                    creator = "Johannes Vermeer",
+                                                    imageData = toByteArray(context.getDrawable(R.drawable.the_milkmaid)!!),
+                                                    externalLink = "https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer)"
+                                                ),
+                                                Artwork(
+                                                    title = "The Starry Night",
+                                                    creator = "Van Gogh",
+                                                    imageData = toByteArray(context.getDrawable(R.drawable.starry_night)!!),
+                                                    externalLink = "https://en.wikipedia.org/wiki/The_Starry_Night"
+                                                ),
+                                                Artwork(
+                                                    title = "The Night Watch",
+                                                    creator = "Rembrandt van Rijn",
+                                                    imageData = toByteArray(context.getDrawable(R.drawable.nightwatch)!!),
+                                                    externalLink = "https://en.wikipedia.org/wiki/The_Night_Watch"
+                                                )
                                             ))
                                         }
                                     }

@@ -1,6 +1,5 @@
 package model
 
-import android.graphics.Bitmap
 import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -21,7 +20,10 @@ data class Artwork (
     val creator: String,
 
     @ColumnInfo(name = "image", typeAffinity = ColumnInfo.BLOB)
-    val imageData: ByteArray
+    val imageData: ByteArray,
+
+    @ColumnInfo(name = "link")
+    val externalLink: String
 ) : Parcelable {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true

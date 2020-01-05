@@ -28,7 +28,7 @@
         app:layout_constraintHeight_percent="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/artworkToolbar"
-        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintWidth_percent="0.75"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <ImageView
@@ -40,7 +40,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/arrow_right_black" />
+        app:srcCompat="@drawable/next_arrow" />
 
     <ImageView
         android:id="@+id/ivNextArrow"
@@ -51,7 +51,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/arrow_right_black" />
+        app:srcCompat="@drawable/next_arrow" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabLike"

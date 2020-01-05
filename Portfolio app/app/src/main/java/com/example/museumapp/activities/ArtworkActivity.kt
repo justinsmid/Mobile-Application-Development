@@ -1,12 +1,14 @@
 package com.example.museumapp.activities
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
+import androidx.browser.customtabs.CustomTabsIntent
 import com.example.museumapp.R
 import com.example.museumapp.Services.UserService
 import database.repositories.UserRepository
@@ -105,7 +107,10 @@ class ArtworkActivity : AppCompatActivity() {
             true
         }
         R.id.itemLearnMore -> {
-            Toast.makeText(this,"Learn more clicked",Toast.LENGTH_LONG).show()
+            var url = artwork.externalLink
+            val builder = CustomTabsIntent.Builder()
+            val customTabsIntent = builder.build()
+            customTabsIntent.launchUrl(this, Uri.parse(url))
             true
         }
         R.id.itemComments -> {
