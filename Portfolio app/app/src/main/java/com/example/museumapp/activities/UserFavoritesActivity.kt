@@ -22,6 +22,8 @@ class UserFavoritesActivity : AppCompatActivity(), SearchView.OnQueryTextListene
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_collection)
         setSupportActionBar(findViewById(R.id.collectionToolbar))
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.title = getString(R.string.favorites)
 
         user = intent.getParcelableExtra("user")!!
 
