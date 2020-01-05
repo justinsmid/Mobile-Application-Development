@@ -23,6 +23,7 @@ class CollectionActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_collection)
         setSupportActionBar(findViewById(R.id.collectionToolbar))
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         artworkRepository = ArtworkRepository(this)
 

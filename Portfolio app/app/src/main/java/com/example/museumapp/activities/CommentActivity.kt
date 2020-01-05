@@ -26,7 +26,6 @@ class CommentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_comments)
         setSupportActionBar(commentsToolbar)
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         artwork = intent.getParcelableExtra("artwork")!!
 

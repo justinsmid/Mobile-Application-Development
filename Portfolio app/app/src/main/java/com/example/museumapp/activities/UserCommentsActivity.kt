@@ -24,7 +24,6 @@ class UserCommentsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_comments)
         setSupportActionBar(commentsToolbar)
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         user = intent.getParcelableExtra("user")!!
         commentRepository = CommentRepository(this)
