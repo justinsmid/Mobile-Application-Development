@@ -23,7 +23,8 @@
         <activity
             android:name=".activities.AddActivity"
             android:label="@string/add_activity_label"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
         </activity>
     </application>
 

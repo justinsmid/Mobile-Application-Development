@@ -22,6 +22,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <EditText
+                android:id="@+id/etMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/month"
+                android:inputType="number"
+                android:maxLength="2"
+                app:layout_constraintEnd_toStartOf="@+id/etYear"
+                app:layout_constraintStart_toEndOf="@+id/etDay"
+                app:layout_constraintTop_toBottomOf="@+id/tilPlatform"
+                app:layout_constraintWidth_percent=".33" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilTitle"
                 android:layout_width="match_parent"
@@ -55,24 +68,13 @@
                 android:id="@+id/etDay"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintWidth_percent=".3"
                 android:ems="10"
                 android:hint="@string/day"
                 android:inputType="number"
                 android:maxLength="2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/spMonth"
-                app:layout_constraintTop_toBottomOf="@+id/tilPlatform" />
-
-            <Spinner
-                android:id="@+id/spMonth"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/etYear"
-                app:layout_constraintEnd_toStartOf="@id/etYear"
-                app:layout_constraintStart_toEndOf="@+id/etDay"
                 app:layout_constraintTop_toBottomOf="@+id/tilPlatform"
-                app:layout_constraintWidth_percent=".3" />
+                app:layout_constraintWidth_percent=".33" />
 
             <EditText
                 android:id="@+id/etYear"
@@ -83,9 +85,8 @@
                 android:inputType="number"
                 android:maxLength="4"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/spMonth"
                 app:layout_constraintTop_toBottomOf="@+id/tilPlatform"
-                app:layout_constraintWidth_percent=".3" />
+                app:layout_constraintWidth_percent=".33" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
